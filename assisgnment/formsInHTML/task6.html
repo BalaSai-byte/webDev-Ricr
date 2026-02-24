@@ -30,8 +30,22 @@
         </tr>
         <tr>
           <td><b>Name</b></td>
-          <td><input type="text" name="firstName" id="firstName" /></td>
-          <td><input type="text" name="lastName" id="lastName" /></td>
+          <td>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="last"
+            />
+          </td>
         </tr>
         <tr>
           <td><b>Gender</b></td>
@@ -43,12 +57,18 @@
         </tr>
         <tr>
           <td><b>Phone</b></td>
-          <td><input type="number" name="phone" id="phone" /></td>
+          <td>
+            <input type="number" name="phone" id="phone" placeholder="####" />
+          </td>
         </tr>
         <tr>
           <td><b>Address</b></td>
-          <td><input type="text" name="city" id="city" /></td>
-          <td><input type="text" name="state" id="state" /></td>
+          <td>
+            <input type="text" name="city" id="city" placeholder="city" />
+          </td>
+          <td>
+            <input type="text" name="state" id="state" placeholder="state" />
+          </td>
         </tr>
         <tr>
           <td><b>Your Query</b></td>
@@ -56,7 +76,7 @@
         </tr>
         <tr>
           <td><b>Appointment Type</b></td>
-          <td>
+          <td colspan="2">
             <label for="appointmentType"
               >Select which appointment type(s) you require</label
             ><br /><input
