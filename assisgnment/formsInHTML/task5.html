@@ -6,106 +6,348 @@
     <title>Document</title>
   </head>
   <body>
-    <h3><center>APPLICATION FORM</center></h3>
-    <fieldset>
-      <legend>Personal Details</legend>
-      <table border="0" cellspacing="10">
-        <tr>
-          <td width="300"><b>Applicant's full name</b></td>
-          <td width="500">
-            <select name="applicantTitle" id="applicantTitle">
-              <option value="">--Select--</option>
-              <option value="mr">Mr.</option>
-              <option value="mrs">Mrs.</option></select
-            ><input type="text" name="applicantName" id="applicantName" />
-          </td>
-          <td width="300"><b>Care Of</b></td>
-          <td width="500">
-            <span>Parents</span
-            ><input type="radio" name="careOf" id="careOf" /><span
-              >Guardian</span
-            ><input type="radio" name="careOf" id="careOf" />
-          </td>
-        </tr>
-        <tr>
-          <td><b>Father's Name</b></td>
-          <td>
-            <select name="fatherTitle" id="fatherTitle">
-              <option value="fatherTitle">Mr.</option></select
-            ><input type="text" name="fatherName" id="fatherName" />
-          </td>
-          <td><b>Mother's Name</b></td>
-          <td>
-            <select name="motherTitle" id="motherTitle">
-              <option value="motherTitle">Mrs.</option></select
-            ><input type="text" name="motherName" id="motherName" />
-          </td>
-        </tr>
-        <tr>
-          <td><b>Gender</b></td>
-          <td>
-            <span>Male</span
-            ><input type="radio" name="gender" id="gender" /><span>Female</span
-            ><input type="radio" name="gender" id="gender" /><span>Others</span
-            ><input type="radio" name="gender" id="gender" />
-          </td>
-          <td><b>Date of Birth</b></td>
-          <td><input type="date" name="dob" id="dob" /></td>
-        </tr>
-        <tr>
-          <td><b>Marital Status</b></td>
-          <td>
-            <select name="maritalStatus" id="maritalStatus">
-              <option value="">--Select--</option>
-              <option value="">Married</option>
-              <option value="">Unmarried</option>
-            </select>
-          </td>
-          <td><b>Category</b></td>
-          <td>
-            <select name="category" id="category">
-              <option value="">--Select--</option>
-              <option value="category">Married</option>
-              <option value="category">SC/ST</option>
-              <option value="category">OBC</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td><b>Handicapped</b></td>
-          <td>
-            <span>No</span
-            ><input type="radio" name="handicapped" id="handicapped" /><span
-              >Yes</span
-            ><input type="radio" name="handicapped" id="handicapped" />
-          </td>
-          <td><b>Ex-Serviceman</b></td>
-          <td>
-            <span>No</span
-            ><input type="radio" name="exServiceman" id="exServiceman" /><span
-              >Yes</span
-            ><input type="radio" name="exServiceman" id="exServiceman" />
-          </td>
-        </tr>
-        <tr>
-          <td><b>EWS</b></td>
-          <td>
-            <span>No</span><input type="radio" name="ews" id="ews" /><span
-              >Yes</span
-            ><input type="radio" name="ews" id="ews" />
-          </td>
-          <td><b>Religion</b></td>
-          <td>
-            <select name="religion" id="religion">
-              <option value="">--Select--</option>
-              <option value="religion">Hindu</option>
-              <option value="religion">Islam</option>
-              <option value="religion">Christianity</option>
-              <option value="religion">Sikhism</option>
-            </select>
-          </td>
-        </tr>
-      </table>
-    </fieldset>
+    <div>
+      <h3><center>APPLICATION FORM</center></h3>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table border="0" cellspacing="10">
+          <tr>
+            <td width="300"><b>Applicant's full name</b></td>
+            <td width="500">
+              <select name="applicantTitle" id="applicantTitle">
+                <option value="">--Select--</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option></select
+              ><input type="text" name="applicantName" id="applicantName" />
+            </td>
+            <td width="300"><b>Care Of</b></td>
+            <td width="500">
+              <span>Parents</span
+              ><input type="radio" name="careOf" id="careOf" /><span
+                >Guardian</span
+              ><input type="radio" name="careOf" id="careOf" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Father's Name</b></td>
+            <td>
+              <select name="fatherTitle" id="fatherTitle">
+                <option value="fatherTitle">Mr.</option></select
+              ><input type="text" name="fatherName" id="fatherName" />
+            </td>
+            <td><b>Mother's Name</b></td>
+            <td>
+              <select name="motherTitle" id="motherTitle">
+                <option value="motherTitle">Mrs.</option></select
+              ><input type="text" name="motherName" id="motherName" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>Gender</b></td>
+            <td>
+              <span>Male</span
+              ><input type="radio" name="gender" id="gender" /><span
+                >Female</span
+              ><input type="radio" name="gender" id="gender" /><span
+                >Others</span
+              ><input type="radio" name="gender" id="gender" />
+            </td>
+            <td><b>Date of Birth</b></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+          <tr>
+            <td><b>Marital Status</b></td>
+            <td>
+              <select name="maritalStatus" id="maritalStatus">
+                <option value="">--Select--</option>
+                <option value="">Married</option>
+                <option value="">Unmarried</option>
+              </select>
+            </td>
+            <td><b>Category</b></td>
+            <td>
+              <select name="category" id="category">
+                <option value="">--Select--</option>
+                <option value="category">Married</option>
+                <option value="category">SC/ST</option>
+                <option value="category">OBC</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Handicapped</b></td>
+            <td>
+              <span>No</span
+              ><input type="radio" name="handicapped" id="handicapped" /><span
+                >Yes</span
+              ><input type="radio" name="handicapped" id="handicapped" />
+            </td>
+            <td><b>Ex-Serviceman</b></td>
+            <td>
+              <span>No</span
+              ><input type="radio" name="exServiceman" id="exServiceman" /><span
+                >Yes</span
+              ><input type="radio" name="exServiceman" id="exServiceman" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>EWS</b></td>
+            <td>
+              <span>No</span><input type="radio" name="ews" id="ews" /><span
+                >Yes</span
+              ><input type="radio" name="ews" id="ews" />
+            </td>
+            <td><b>Religion</b></td>
+            <td>
+              <select name="religion" id="religion">
+                <option value="">--Select--</option>
+                <option value="religion">Hindu</option>
+                <option value="religion">Islam</option>
+                <option value="religion">Christianity</option>
+                <option value="religion">Sikhism</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+
+    <div>
+      <fieldset>
+        <legend>Contact Details</legend>
+        <table border="0" cellspacing="10">
+          <tr>
+            <td width="300"><b>Mobile Number</b></td>
+            <td width="500">
+              <input type="number" name="mobileNum" id="mobileNum" />
+            </td>
+            <td width="300"><b>Email ID</b></td>
+            <td width="500"><input type="email" name="email" id="email" /></td>
+          </tr>
+          <tr>
+            <td><b>Address Line 1</b></td>
+            <td>
+              <input type="text" name="addrressLine1" id="addrressLine1" />
+            </td>
+            <td><b>Address Line 2</b></td>
+            <td>
+              <input type="text" name="addrressLine2" id="addrressLine2" />
+            </td>
+          </tr>
+          <tr>
+            <td><b>City</b></td>
+            <td><input type="text" name="city" id="city" /></td>
+            <td><b>State</b></td>
+            <td>
+              <select name="state" id="state">
+                <option value="">--Select--</option>
+                <option value="gujrat">Gujrat</option>
+                <option value="uttarPradesh">Uttar Pradesh</option>
+                <option value="delhi">Delhi</option>
+                <option value="madhyaPradesh">Madhya Pradesh</option>
+                <option value="bihar">Bihar</option>
+                <option value="goa">Goa</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Pin Code</b></td>
+            <td><input type="number" name="pinCode" id="pinCode" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Qualification Details</legend>
+        <table border="0" cellspacing="10">
+          <tr align="center">
+            <th width="200"><b>Sr No.</b></th>
+            <th width="200"><b>Qualification</b></th>
+            <th width="200"><b>Board/University</b></th>
+            <th width="200"><b>Passing Year</b></th>
+            <th width="200"><b>Max Marks</b></th>
+            <th width="200"><b>Marks Obtain</b></th>
+            <th width="200"><b>Percentage</b></th>
+          </tr>
+          <tr>
+            <td><b>1</b></td>
+            <td>
+              <select name="qualification1" id="qualification1">
+                <option value="">--Select--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="undergraduation">Undergraduation</option>
+                <option value="pg">Post Graduation</option>
+              </select>
+            </td>
+            <td><input type="text" name="board1" id="board1" /></td>
+            <td>
+              <input type="number" name="passingYear1" id="passingYear1" />
+            </td>
+            <td><input type="number" name="maxMarks1" id="maxMarks1" /></td>
+            <td>
+              <input type="number" name="marksObtained1" id="marksObtained1" />
+            </td>
+            <td><input type="number" name="percentage1" id="percentage1" /></td>
+          </tr>
+          <tr>
+            <td><b>2</b></td>
+            <td>
+              <select name="qualification2" id="qualification2">
+                <option value="">--Select--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="undergraduation">Undergraduation</option>
+                <option value="pg">Post Graduation</option>
+              </select>
+            </td>
+            <td><input type="text" name="board2" id="board2" /></td>
+            <td>
+              <input type="number" name="passingYear2" id="passingYear2" />
+            </td>
+            <td><input type="number" name="maxMarks2" id="maxMarks2" /></td>
+            <td>
+              <input type="number" name="marksObtained2" id="marksObtained2" />
+            </td>
+
+            <td><input type="number" name="percentage2" id="percentage2" /></td>
+          </tr>
+          <tr>
+            <td><b>3</b></td>
+            <td>
+              <select name="qualification3" id="qualification3">
+                <option value="">--Select--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="undergraduation">Undergraduation</option>
+                <option value="pg">Post Graduation</option>
+              </select>
+            </td>
+            <td><input type="text" name="board3" id="board3" /></td>
+            <td>
+              <input type="number" name="passingYear3" id="passingYear3" />
+            </td>
+            <td><input type="number" name="maxMarks3" id="maxMarks3" /></td>
+            <td>
+              <input type="number" name="marksObtained3" id="marksObtained3" />
+            </td>
+
+            <td><input type="number" name="percentage3" id="percentage3" /></td>
+          </tr>
+          <tr>
+            <td><b>4</b></td>
+            <td>
+              <select name="qualification4" id="qualification4">
+                <option value="">--Select--</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="undergraduation">Undergraduation</option>
+                <option value="pg">Post Graduation</option>
+              </select>
+            </td>
+            <td><input type="text" name="board4" id="board4" /></td>
+            <td>
+              <input type="number" name="passingYear4" id="passingYear4" />
+            </td>
+            <td><input type="number" name="maxMarks4" id="maxMarks4" /></td>
+            <td>
+              <input type="number" name="marksObtained4" id="marksObtained4" />
+            </td>
+
+            <td><input type="number" name="percentage4" id="percentage4" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Language Knowledge</legend>
+        <table border="0" cellspacing="10">
+          <tr>
+            <th><b>Language</b></th>
+            <th width="500"><b>Reading</b></th>
+            <th width="300"><b>Writing</b></th>
+            <th width="500">Spoken</th>
+          </tr>
+          <tr>
+            <td><b>Hindi</b></td>
+            <td align="center">
+              <input type="checkbox" name="reading1" id="reading1" />
+            </td>
+            <td align="center">
+              <input type="checkbox" name="writing1" id="writing1" />
+            </td>
+            <td align="center">
+              <center>
+                <input type="checkbox" name="spoken1" id="spoken1" />
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td><b>English</b></td>
+            <td align="center">
+              <input type="checkbox" name="reading" id="reading2" />
+            </td>
+            <td align="center">
+              <input type="checkbox" name="writing" id="writing2" />
+            </td>
+            <td align="center">
+              <center>
+                <input type="checkbox" name="spoken" id="spoken2" />
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Urdu</b></td>
+            <td align="center">
+              <input type="checkbox" name="reading" id="reading3" />
+            </td>
+            <td align="center">
+              <input type="checkbox" name="writing" id="writing3" />
+            </td>
+            <td align="center">
+              <center>
+                <input type="checkbox" name="spoken" id="spoken3" />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Identification Detail</legend>
+        <table border="0" cellspacing="10">
+          <tr>
+            <td>
+              <label for="aadharNum"><b>Aadhar Card Number</b></label
+              ><input type="number" name="aadharNum" id="aadharNum" />
+            </td>
+            <td width="25"></td>
+            <td>
+              <label for="panNum"><b>PAN Card Number</b></label
+              ><input type="number" name="panNum" id="panNum" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="photo"><b>Upload Photo</b></label
+              ><input type="file" name="photo" id="photo" />
+            </td>
+            <td></td>
+            <td>
+              <label for="signature">Upload Signature</label
+              ><input type="file" name="signature" id="signature" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </div>
+    <div>
+      <center>
+        <button type="submit">Submit</button><button type="button">Back</button>
+      </center>
+    </div>
   </body>
 </html>

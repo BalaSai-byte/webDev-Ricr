@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 align="center">
+      Doctor Appointment Form
+      <hr />
+    </h2>
+    <div>
+      <table border="0" cellspacing="10">
+        <tr>
+            <td rowspan="9"><img src="Screenshot_24-2-2026_155822_.jpeg" alt="" ></td>
+          <td width="150"><b>Appointment Date</b></td>
+          <td width="250">
+            <input type="date" name="appointmentDate" id="appointmentDate" />
+          </td>
+          <td width="150"></td>
+        </tr>
+        <tr>
+          <td><b>Appointment Time</b></td>
+          <td>
+            <input type="time" name="appointmentTime" id="appointmentTime" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Name</b></td>
+          <td><input type="text" name="firstName" id="firstName" /></td>
+          <td><input type="text" name="lastName" id="lastName" /></td>
+        </tr>
+        <tr>
+          <td><b>Gender</b></td>
+          <td>
+            <span>Male</span
+            ><input type="radio" name="gender" id="gender" /><span>Female</span
+            ><input type="radio" name="gender" id="gender" />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Phone</b></td>
+          <td><input type="number" name="phone" id="phone" /></td>
+        </tr>
+        <tr>
+          <td><b>Address</b></td>
+          <td><input type="text" name="city" id="city" /></td>
+          <td><input type="text" name="state" id="state" /></td>
+        </tr>
+        <tr>
+          <td><b>Your Query</b></td>
+          <td><textarea name="query" id="query"></textarea></td>
+        </tr>
+        <tr>
+          <td><b>Appointment Type</b></td>
+          <td>
+            <label for="appointmentType"
+              >Select which appointment type(s) you require</label
+            ><br /><input
+              type="checkbox"
+              name="appointmentType"
+              id="appointmentType"
+            /><span>Cervix checkup</span><br /><input
+              type="checkbox"
+              name="appointmentType"
+              id="appointmentType"
+            /><span>Heart Checkup</span><br /><input
+              type="checkbox"
+              name="appointmentType"
+              id="appointmentType"
+            /><span>Eye check-up</span><br /><input
+              type="checkbox"
+              name="appointmentType"
+              id="appointmentType"
+            /><span>Hearing Test</span>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit">Send</button></td>
+        </tr>
+      </table>
+    </div>
+    
+  </body>
+</html>
