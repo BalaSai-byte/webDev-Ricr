@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(231, 231, 29);
+}
+
+table{
+    border-width: 10px;
+    border-top-color: rgb(222, 184, 135);
+    border-bottom-color: rgb(222, 184, 135);
+    border-left-color: rgb(222, 184, 135);
+    border-right-color: rgb(222, 184, 135);
+    border-collapse:collapse;
+    border-style:double;
+}
+
+h2{
+    color: red;
+}
