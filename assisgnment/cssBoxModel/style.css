@@ -1,0 +1,44 @@
+
+
+table{
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    border: 1px solid white;
+}
+body{
+    background-color: rgb(76, 200, 76);
+}
+.abc{
+    background-color: white;
+    width: 280px;
+    height: 40px;
+    border: 1px solid rgb(209, 205, 205);
+    padding: 0 10px;
+    margin: 5px 10px;
+}
+
+textarea{
+    width: 295px;
+    height: 100px;
+    margin: 5px 10px;
+    border: 1px solid rgb(209, 205, 205);
+}
+
+center{
+    background-color: white;
+}
+
+
+#submitButton{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: green;
+   width: 310px;
+   height: 40px;
+   text-align: center;
+   color: white;
+   margin: 5px;
+}

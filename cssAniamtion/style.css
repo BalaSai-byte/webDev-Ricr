@@ -1,0 +1,12 @@
+#div1{
+    height: 20px;
+    width: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+    text-wrap-mode: nowrap;
+}
+
+#div1:hover{
+    width: 200px;
+    transition: width 3s ease-out;
+}

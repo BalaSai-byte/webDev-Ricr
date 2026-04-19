@@ -1,11 +1,26 @@
 *{
-    background-color: rgb(78, 74, 74);
+    
     font-style: italic;
+    margin: 0;
+    padding: 0;
 }
 
 h1{
     color: white;
 }
 a{
-    color: bisque;
+    color: green;
+}
+.indexPage{
+    width: 1400px;
+    height: 1000px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;   
+    background-color: black;
+}
+#h1{
+    position: fixed;
+    background-color: black;
 }

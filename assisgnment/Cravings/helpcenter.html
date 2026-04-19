@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <style>
+      .help-center {
+        min-width: 500px;
+        width: 50%;
+      }
+      .divider-line {
+        border-right: 2px solid rgba(255, 255, 255, 0.5);
+      }
+      button {
+      }
+      .help-section {
+        background: url(images/helpcenter.png) ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .help-center {
+        width: 80%;
+        max-width: 900px;
+        padding: 40px;
+        border-radius: 20px;
+
+        background: rgb(0, 0, 0); /* transparent black */
+
+        backdrop-filter: blur(10px); /* blur effect */
+        -webkit-backdrop-filter: blur(10px); /* for Safari */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div
+      class="d-flex justify-content-between align-items-center w-100 px-4 bg-danger sticky-top"
+    >
+      <a href="#">
+        <img src="images/logo.png" alt="logo" style="height: 80px" />
+      </a>
+      <div class="d-flex gap-4">
+        <a href="../Cravings/login.html" class="text-decoration-none text-light"
+          >Login</a
+        >
+        <a
+          href="../Cravings/registration.html"
+          class="text-decoration-none border text-bg-light fw-bold px-3 me-5 rounded-4"
+          >Register</a
+        >
+      </div>
+    </div>
+
+    <!-- left side -->
+    <div
+      class="help-section d-flex justify-content-center align-content-center"
+    >
+      <div class="help-center bg-transparent rounded p-3">
+        <h1 class="text-center text-danger">
+          <i class="bi bi-question-circle-fill"></i> Help Center
+        </h1>
+        <p class="text-light fw-bold text-center">
+          Browse FAQs or submit a support ticket below.
+        </p>
+        <div class="row g-0">
+          <div class="col-md-6 divider-line ps-2">
+            <h4 class="text-light fw-bold">Frequently Asked Questions</h4>
+            <select class="form-select form-select-sm">
+              <option>How do I track my order?</option>
+              <option>
+                Go to your dashboard → Orders and click on the active order to
+                see live tracking.
+              </option>
+            </select>
+            <div>
+              <select class="mt-3 form-select form-select-sm">
+                <option>How do I get a refund?</option>
+                <option>
+                  Submit a ticket below with your Order ID and our team will
+                  process it within 2–3 business days.
+                </option>
+              </select>
+            </div>
+            <div>
+              <select class="mt-3 form-select form-select-sm">
+                <option>My rider is late. What do I do?</option>
+                <option>
+                  You can contact your rider directly via the order page or
+                  raise a support ticket.
+                </option>
+              </select>
+            </div>
+            <div>
+              <select class="mt-3 form-select form-select-sm">
+                <option>How do I update my account info?</option>
+                <option>
+                  Navigate to your dashboard → Settings to update your profile
+                  details.
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- right  -->
+
+          <div class="col-md-6 ps-3">
+            <h4 class="text-light fw-bold">Submit a Support Ticket</h4>
+            <div>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Enter is full name"
+              />
+            </div>
+            <div>
+              <input
+                class="form-control mt-4"
+                type="text"
+                placeholder="Enter Your email"
+              />
+            </div>
+            <div>
+              <select class="form-control mt-3">
+                <option>Select issue type</option>
+                <option>Account & Profile</option>
+                <option>Order issues</option>
+                <option>Payment & Billing</option>
+                <option>Delivery Priblem</option>
+                <option>Resturent / Menu</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="mt-3">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="e.g.ORD 00123"
+              />
+            </div>
+            <div>
+              <input
+                class="form-control mt-3 p-5"
+                type="text"
+                placeholder="Please describe  the problem in detail..."
+              />
+            </div>
+            <div>
+              <button class="form-control fw-bold bg-danger text-light mt-3">
+                Submit Ticket
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <!-- top text -->
+      <div class="container">
+        <p
+          class="text-center mb-5 mt-3 text-capitalize fw-bold fs-4"
+          style="font-weight: 100"
+        >
+          --- Your favorite food delivery platform connecting customers with
+          restaurants and riders. ---
+        </p>
+        <!-- logo -->
+        <div class="row g-4 justify-content-between">
+          <div class="col-md-2 mb-4 text-start">
+            <div
+              class="bg-white fw-bold rounded-circle d-flex justify-content-center align-items-center"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="images/footer.png"
+                class="rounded-circle mt-3"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+          </div>
+          <!-- quick links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">Quick Links</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/index.html"
+                class="text-white text-decoration-none fs-4"
+                >Home</a
+              >
+            </p>
+            <p class="mb-3">
+              <a
+                href="../Cravings/about.html"
+                class="text-white text-decoration-none fs-4"
+                >About</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                href="../Cravings/order-now.html"
+                class="text-white text-decoration-none fs-4"
+                >Order Now</a
+              >
+            </p>
+          </div>
+          <!-- Restaurants -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Restaurants</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/registration.html"
+                class="text-white text-decoration-none fs-4"
+                >Partner With Us</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Restaurant Dashboard</a
+              >
+            </p>
+          </div>
+          <!-- For Riders -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Riders</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/registration.html"
+                class="text-white text-decoration-none fs-4"
+                >Become a Rider</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Rider Dashboard</a
+              >
+            </p>
+          </div>
+
+          <!-- Feedback & Support -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">Feedback & Support</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/feedback.html"
+                class="text-white text-decoration-none fs-4"
+                >Submit Feedback</a
+              >
+            </p>
+            <p class="mb-3">
+              <a
+                href="../Cravings/helpcenter.html"
+                class="text-white text-decoration-none fs-4"
+                >Help Center</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                href="../Cravings/contactus.html"
+                class="text-white text-decoration-none fs-4"
+                >Contact Us</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <hr class="border-light opacity-50 my-3" />
+        <div>
+          <p class="fs-5 mb-0">© 2026 Cravings. All rights reserved.</p>
+          <div class="d-flex justify-content-end">
+            <a
+              href="../Cravings/privacypolicy.html"
+              class="text-light text-decoration-none me-3 fs-4"
+              >Privacy Policy</a
+            >
+            <a
+              href="../Cravings/TermsofService.html"
+              class="text-light text-decoration-none me-3 fs-4"
+              >Terms of Service</a
+            >
+            <a
+              href="../Cravings/sitemap.html"
+              class="text-light text-decoration-none me-3 fs-4"
+              >Site Map</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

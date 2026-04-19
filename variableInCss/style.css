@@ -1,0 +1,41 @@
+:root{
+    --main-colour : rgb(200, 27, 137);
+    --sub-colour: skyblue;
+    --text-colour : green;
+}
+
+button{
+    border: 1px solid black;
+    
+    border-radius: 3px;
+}
+
+#login{
+    background-color:var(--main-colour);
+}
+
+#register
+{
+    background-color: var(--sub-colour);
+}
+
+h1{
+    color: var(--main-colour);
+}
+
+h3{
+   color: var(--sub-colour);
+}
+p{
+    color: var(--text-colour);
+}
+
+#table{
+    border-radius: 5px;
+    th{
+        color: var(--main-colour);
+    }
+    td{
+        color: var(--text-colour);
+    }
+}

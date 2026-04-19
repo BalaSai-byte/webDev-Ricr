@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      #hero-section {
+        background-image: url(images/logo-img.png);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      .card img {
+    height: 220px;
+    object-fit: cover;
+      }
+
+      .stats-section {
+      padding: 30px 150px;
+      text-align: center;
+      background-color: rgb(244, 239, 232);
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      height: 250px;
+      width: 250px;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stat-number {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .orange { color: #c2410c; }
+    .pink { color: #d9468f; }
+
+    .stat-title {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .stat-desc {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .review-card{
+      background-color: rgb(244, 239, 232);
+    }
+
+    </style>
+  </head>
+  <body class="abc">
+    <!-- top  -->
+
+    <div
+      class="d-flex justify-content-between align-items-center w-100 px-4 bg-danger sticky-top"
+    >
+      <a href="../Cravings/index.html">
+        <img src="images/logo.png" alt="logo" style="height: 80px" />
+      </a>
+      <div class="d-flex gap-4">
+        <a href="../Cravings/login.html" class="text-decoration-none text-light"
+          >Login</a
+        >
+        <a
+          href="../Cravings/registration.html"
+          class="text-decoration-none border text-bg-light fw-bold px-3 me-5 rounded-4"
+          >Register</a
+        >
+      </div>
+    </div>
+
+    <!-- hero section  -->
+
+    <div
+      id="hero-section"
+      class="big-text container-img d-flex flex-column justify-content-center align-items-center vh-100"
+    >
+      <h1 class="display-1 fw-bold text-white text-capitalize">
+        your favorite food,
+      </h1>
+      <h1 class="display-1 fw-bold text-white text-capitalize">
+        delivered fast
+      </h1>
+      <div>
+        <p class="display-6 text-center fw-bold text-white ps-5 mt-5">
+          Order from thousands of restaurants and get it delivered to your
+          doorstep
+        </p>
+      </div>
+      <div class="mb-4 hero-actions">
+        <button
+          class="btn btn-lg fw-bold text-bg-danger px-4 me-5 text-center mt-5 fs-3"
+        >
+          <a href="../Cravings/registration.html" class="text-white text-decoration-none">Sign Up</a>
+        </button>
+        <button
+          class="btn btn-lg fw-bold text-bg-light px-4 me-5 text-center mt-5 fs-3"
+        >
+          <a href="../Cravings/order-now.html" class="text-black text-decoration-none">Order now</a>
+        </button>
+
+        <!-- Search Bar -->
+      </div>
+      <div class="search-box w-50 mx-auto mt-5">
+        <div class="d-flex align-items-center border px-2 bg-white rounded-4">
+          <!-- icon -->
+          <span class="bg-white text-dark border-0">
+            <i class="bi bi-search fs-2"></i>
+          </span>
+
+          <!-- input -->
+          <input
+            type="text"
+            class="form-control form-control-lg py-4 fw-bold border-0 shadow-none"
+            placeholder="Search restaurants or dishes..."
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- next paze  -->
+    <div class="py-5" style="background: linear-gradient( #c94b4b, #e6a87c,rgb(235, 223, 223));">
+  <div class="container">
+
+    <!-- Heading -->
+    <h2 class="text-white fw-bold">Featured Restaurants</h2>
+    <p class="text-white">6 restaurants available</p>
+
+    <!-- Row -->
+    <div class="row g-4 mt-3">
+
+     <!-- restaurant 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image + Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu1.png" class="card-img-top" alt="">
+
+            <!-- Rating Badge -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+             <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- restaurant 2 -->
+      <div class="col-md-4">
+       <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image + Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu2.png" class="card-img-top" alt="">
+
+            <!-- Rating  -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+              <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- restaurant 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image & Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu3.png" class="card-img-top" alt="">
+
+            <!-- Rating Badge -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+              <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    
+  <div class="container">
+    <!-- Row -->
+    <div class="row g-4 mt-3">
+
+      <!-- restaurant 4 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image + Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu1.png" class="card-img-top" alt="">
+
+            <!-- Rating -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+              <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     <!-- restaurant 5 -->
+      <div class="col-md-4">
+       <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image + Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu2.png" class="card-img-top" alt="">
+
+            <!-- Rating  -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+              <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- restaurant 6 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow rounded-4 overflow-hidden">
+
+          <!-- Image & Rating -->
+          <div class="card position-relative">
+            <img src="images/exploremenu3.png" class="card-img-top" alt="">
+
+            <!-- Rating Badge -->
+            <span class="badge bg-danger position-absolute top-0 end-0 m-2">
+              <i class="bi bi-star-fill"></i> 3.6
+            </span>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body">
+            <h5 class="fw-bold">Under The Mango Tree</h5>
+            <p class="text-muted small">
+              Enjoy the thrill of grill and barbecue...
+            </p>
+
+            <!-- Tags -->
+            <span class="badge bg-light text-dark">Indian</span>
+            <span class="badge bg-light text-dark">Chinese</span>
+            <span class="badge bg-light text-dark">Italian</span>
+
+            <!-- Button -->
+            <div class="mt-3">
+              <button class="btn btn-danger w-100 rounded-pill">
+                Explore Menu
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+
+   
+
+
+    <!-- stats -->
+     <div class="stats-section ">
+
+       <!-- Cravings by the Numbers -->
+    <div class="text-center align-items-center mt-5 m-5 ">
+      <h1 class="display-6 fw-bold">Cravings by the Numbers</h1>
+      <p class="text-center h6 mt-4">
+        See why millions trust us for their daily food delivery needs
+      </p>
+    </div>
+    <div class="row mt-5 g-4">
+
+      <!-- stat 1 -->
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-number orange">2.5M+</div>
+          <div class="stat-title">Successful Deliveries</div>
+          <br>
+          <p class="stat-desc">Orders delivered with care and precision</p>
+        </div>
+      </div>
+
+      <!-- stat 2 -->
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-number pink">500K+</div>
+          <div class="stat-title ">Happy Customers</div>
+          <br>
+          <p class="stat-desc">Satisfied users enjoying delicious food</p>
+        </div>
+      </div>
+
+      <!-- stat 3 -->
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-number orange">5K+</div>
+          <div class="stat-title">Partner Restaurants</div>
+          <br>
+          <p class="stat-desc">Restaurants serving amazing cuisine</p>
+        </div>
+      </div>
+
+      <!-- stat 4 -->
+      <div class="col-md-3">
+        <div class="stat-card">
+          <div class="stat-number pink">1K+</div>
+          <div class="stat-title">Active Delivery Partners</div>
+          <br>
+          <p class="stat-desc">Riders ensuring quick and safe delivery</p>
+        </div>
+      </div>
+
+    </div>
+   </div>  
+
+    <!-- comment -->
+
+    <div class="text-center align-content-center mt-5 ">
+      <h1 class="fw-bold display-6">What Our Customers Say</h1>
+      <h6 class="fw-bold mt-3">Real feedback from real food lovers</h6>
+    </div>
+
+    <!-- five star  -->
+    <div
+      class="d-flex justify-content-center align-items-center mt-4 testimonial-row"
+    >
+      <div
+        class="comment shadow border bg-light rounded-3 d-flex flex-column justify-content-center align-items-center px-4 m-5 p-5"
+      >
+        <!-- five start -->
+        <div class="mb-3 text-warning fs-2">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <!-- Title -->
+        <h3 class="fw-bold mt-3">Amazing Service!</h3>
+        <h4 class="mt-3">
+          "The food arrived hot and fresh. The <br />
+          delivery was incredibly fast. Highly <br />
+          impressed with Cravings' service!"
+        </h4>
+        <!-- usename -->
+        <h1
+          class="bg-danger text-white rounded-circle d-flex justify-content-center align-items-center shadow mt-5"
+          style="width: 40px; height: 40px"
+        >
+          AJ
+        </h1>
+        <h1 class="fw-bold">Arun J.</h1>
+        <h3>Verified Buyer</h3>
+      </div>
+
+      <!-- 2 -->
+      <div
+        class="review-card comment shadow border bg-light rounded-3 d-flex flex-column justify-content-center align-items-center px-4 m-5 p-5 m-4 p-4"
+      >
+        <!-- five star -->
+        <div class="mb-3 text-warning fs-2">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <!-- Title -->
+        <h3 class="fw-bold mt-3">Best App Ever!</h3>
+        <h4 class="mt-3">
+          "Easy to use interface, wide variety of <br />
+          restaurants, and quick delivery. I order <br />
+          from Cravings every week!"
+        </h4>
+        <!-- usename -->
+        <h1
+          class="bg-danger text-white rounded-circle d-flex justify-content-center align-items-center shadow mt-5"
+          style="width: 40px; height: 40px"
+        >
+          SP
+        </h1>
+        <h1 class="fw-bold">Sneha P.</h1>
+        <h3>Verified Buyer</h3>
+      </div>
+
+      <!-- 3 -->
+      <div
+        class="review-card comment shadow border bg-light rounded-3 d-flex flex-column justify-content-center align-items-center px-4 m-5 p-5"
+      >
+        <!-- five star -->
+        <div class="mb-3 text-warning fs-2">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <!-- Title -->
+        <h3 class="fw-bold mt-3">Excellent Choices</h3>
+        <h4 class="mt-3">
+          "Love the variety of restaurants <br />
+          available. Found my new favorite spot <br />
+          through Cravings. Definitely worth it!"
+        </h4>
+        <!-- usename -->
+        <h1
+          class="bg-danger text-white rounded-circle d-flex justify-content-center align-items-center shadow mt-5"
+          style="width: 40px; height: 40px"
+        >
+          RK
+        </h1>
+        <h1 class="mb-0 fw-bold">Raj Kumar</h1>
+        <h3>Verified Buyer</h3>
+      </div>
+    </div>
+
+    <!-- Become a Restaurant Partner -->
+    <div
+      class="text-center align-content-center mt-5 p-5 bg-danger partner-cta"
+    >
+      <div class="">
+        <h1 class="text-center fw-bold display-4 text-light">
+          Become a Restaurant Partner
+        </h1>
+        <h3 class="text-center fw-bold text-light mt-4">
+          Grow your business with Cravings. Join thousands of restaurants
+          already delivering with us.
+        </h3>
+        <button
+          class="btn-partner btn-light px-5 py-4 text-danger fw-bold border border-2 rounded-4 text-center fs-3 border-dark fs-6 mt-5"
+        >
+          Partner With Us
+        </button>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <!-- top text -->
+      <div class="container">
+        <p
+          class="text-center mb-5 mt-3 text-capitalize fw-bold fs-4"
+          style="font-weight: 100"
+        >
+          --- Your favorite food delivery platform connecting customers with
+          restaurants and riders. ---
+        </p>
+        <!-- logo -->
+        <div class="row g-4 justify-content-between footer-links-grid">
+          <div class="col-md-2 mb-4 text-start">
+            <div
+              class="bg-white fw-bold rounded-circle d-flex justify-content-center align-items-center footer-logo-circle"
+              style="width: 150px; height: 150px"
+            >
+              <img
+                src="images/footer.png"
+                class="rounded-circle mt-3 footer-logo-image"
+                style="width: 150px; height: 150px"
+              />
+            </div>
+          </div>
+          <!-- quick links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">Quick Links</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/index.html"
+                class="text-white text-decoration-none fs-4"
+                >Home</a
+              >
+            </p>
+            <p class="mb-3">
+              <a
+                href="../Cravings/about.html"
+                class="text-white text-decoration-none fs-4"
+                >About</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                href="../Cravings/order-now.html"
+                class="text-white text-decoration-none fs-4"
+                >Order Now</a
+              >
+            </p>
+          </div>
+          <!-- Restaurants -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Restaurants</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/registration.html"
+                class="text-white text-decoration-none fs-4"
+                >Partner With Us</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Restaurant Dashboard</a
+              >
+            </p>
+          </div>
+          <!-- For Riders -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold fs-3 mb-4">For Riders</h6>
+
+            <p class="mb-3">
+              <a
+                href="../Cravings/registration.html"
+                class="text-white text-decoration-none fs-4"
+                >Become a Rider</a
+              >
+            </p>
+            <p class="mb-0">
+              <a href="#" class="text-white text-decoration-none fs-4"
+                >Rider Dashboard</a
+              >
+            </p>
+          </div>
+
+          <!-- Feedback & Support -->
+          <div class="col-md-2 mb-4">
+            <!-- <h6 class="fw-bold fs-3 mb-4"></h6> -->
+            <a
+              href="#"
+              class="text-white text-decoration-none fs-4 fw-bold mt-5"
+              >Feedback & Support</a
+            >
+
+            <p class="mb-2 mt-3">
+              <a
+                href="../Cravings/feedback.html"
+                class="text-white text-decoration-none fs-4"
+                >Submit Feedback</a
+              >
+            </p>
+            <p class="mb-3 mt-3">
+              <a
+                href="../Cravings/helpcenter.html"
+                class="text-white text-decoration-none fs-4"
+                >Help Center</a
+              >
+            </p>
+            <p class="mb-0">
+              <a
+                href="../Cravings/contactus.html"
+                class="text-white text-decoration-none fs-4"
+                >Contact Us</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <hr class="border-light opacity-50 my-3" />
+        <div
+          class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-3"
+        >
+          <p class="fs-5 mb-0">© 2026 Cravings. All rights reserved.</p>
+          <div class="d-flex justify-content-end footer-bottom-links">
+            <a href="../Cravings/privacypolicy.html" class="text-light text-decoration-none me-3 fs-4"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-light text-decoration-none me-3 fs-4"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-light text-decoration-none me-3 fs-4"
+              >Site Map</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

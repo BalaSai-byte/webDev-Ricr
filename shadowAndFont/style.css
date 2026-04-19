@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#shadowSample{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 15px grey ;
+    padding: 20px;
+}
+
+#textSample{
+    text-shadow: 1px 1px 1px rgb(226, 18, 18);
+}
+
+#sampleButton{
+    border: none;
+    background-color: rgb(243, 243, 251);
+    color: rgb(16, 6, 144);
+    padding: 5px 10px;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius: 20px;
+    box-shadow: 2px 2px 1px 0px rgb(190, 189, 189);
+    text-shadow: 1px 1px 0 red;
+}
+
+#someData{
+    border: 1px solid black;
+    width: 700px;
+    margin: auto;
+}
+
+#someData h1{
+    color: blue;
+}
+
+#someData h3{
+    color: aquamarine;
+}
+
+#someData{
+    p{
+        color: rgb(45, 179, 47);
+        font-family: Lobster Two;
+        font-size: 20px;
+        font-weight: bolder;
+        font-variant:small-caps;
+    }
+}

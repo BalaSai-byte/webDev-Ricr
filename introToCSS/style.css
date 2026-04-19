@@ -1,0 +1,37 @@
+*{
+    background-color: rgb(196, 33, 33);
+}
+/* //tagselector */
+div{
+    background-color: aquamarine;
+}
+/* classselector */
+.abc{
+    background-color: bisque;
+}
+/* //tagSelector */
+h1{
+    background-color: rgb(56, 50, 43);
+}
+/* id selector */
+#heading1{
+    background-color: rgb(93, 93, 28);
+}
+#newDiv{
+    width: 200px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 25px 100px;
+    /* margin-left: 650px;  */
+    /* for shifting element to middle of screen automatically */
+    margin: 0 auto;
+}
+
+#submitButton{
+    padding: 5px 10px;
+    border: 1px solid #13f913;
+    border-radius: 10px ;
+    background-color: #0bd80b;
+    color: blue;
+}

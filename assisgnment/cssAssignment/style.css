@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-color: rgb(87, 87, 240);
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 100vh;
+    
+   
+    
+    align-items: center;
+}
+
+.card
+{
+    background-color: aliceblue;
+    max-height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 300px;
+}
+
+.form-Field{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.form-Field input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    color: gray;
+}
+
+.terms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton button{
+    background-color: rgb(96, 96, 236);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.referenceLink{
+    text-align: center;
+}
+
+.submitButton button:hover{
+    background-color: aliceblue;
+    color: rgb(96, 96, 236);
+}
+
+.submitButton button:active{
+    background-color: aliceblue;
+    color: rgb(96, 96, 236);
+    font-weight: bolder;
+}
