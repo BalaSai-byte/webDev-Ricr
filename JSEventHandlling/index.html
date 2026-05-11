@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="bulb1">Bulb</div>
+
+    <button id="bulbOn" onclick="Bulb1ON()">ON</button>
+    <button id="bulbOff" onclick="Bulb1OFF()">Off</button>
+    <button id="bulbRed" onclick="Bulb1RED()">red</button>
+    <button id="bulbBlue" onclick="Bulb1BLUE()">Blue</button>
+    <button id="bulbGreen" onclick="Bulb1GREEN()">Green</button>
+
+    <br />
+    <br />
+
+    <input type="color" name="bulb1Colour" id="bulb1Colour" />
+
+    <div id="main">
+      <div id="text">
+        <h2 id="h2">This is heading</h2>
+
+        <br />
+        <br />
+        <p id="para">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          obcaecati modi perspiciatis temporibus dolor id quasi pariatur, eius
+          tenetur nihil dolorem ipsum. Iste fugiat nesciunt labore aut, totam
+          error officiis blanditiis eveniet optio, voluptatum assumenda sunt.
+          Sint molestias fugit labore consequuntur quisquam rerum corporis totam
+          quidem pariatur omnis quaerat molestiae in aspernatur aut esse neque,
+          officia numquam ex voluptate quam cum eveniet odit? Neque aperiam
+          doloribus eveniet aliquam. Quia illo veniam consectetur omnis dolores?
+          Assumenda mollitia, nulla sit reprehenderit, labore ex molestias hic,
+          qui aliquid quaerat doloribus laudantium iusto. Non provident nihil
+          nesciunt natus delectus maiores quos, commodi rerum neque.
+        </p>
+      </div>
+      <div id="colour">
+        <label for="backgroundColor">Background Colour</label>
+        <input type="color" id="backgroundColor">
+        <br>
+        <br>
+        <label for="headingColour">Heading Colour</label>
+        <input type="color" id="headingColour">
+        <br>
+        <br>
+        <label for="paragraphColor">Paragraph colour</label>
+        <input type="color" id="paragraphColor">
+        <br>
+        <br>
+        <button onclick="reset()" id="btn">reset</button>
+      </div>
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
