@@ -11,9 +11,9 @@ function alert() {
     document.getElementById("msg").innerText =
       "OOPS! SORRY!!! TRY A LARGER NUMBER.";
   }
-     else if (guessNum === number) {
+    else if (guessNum === number) {
       document.getElementById("msg").innerText = "Congratulations! You guessed it right!";
-    }
+    } 
   else {
     document.getElementById("msg").innerText = "Please enter a valid number.";
   }
